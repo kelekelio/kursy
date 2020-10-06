@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="~{layouts/layout}">
+<html lang="en">
+<head></head>
+<body>
+<div th:fragment="js">
+    <!-- jquery vendor -->
+    <script src="js/lib/jquery.min.js" th:src="@{/js/lib/jquery.min.js}" type="text/javascript" ></script>
+    <script src="js/lib/jquery.nanoscroller.min.js" th:src="@{/js/lib/jquery.nanoscroller.min.js}" type="text/javascript" ></script>
+    <!-- nano scroller -->
+    <script src="js/lib/menubar/sidebar.js" th:src="@{/js/lib/menubar/sidebar.js}" type="text/javascript" ></script>
+    <script src="js/lib/preloader/pace.min.js" th:src="@{/js/lib/preloader/pace.min.js}" type="text/javascript" ></script>
+    <!-- sidebar -->
+    <script src="js/lib/bootstrap.min.js" th:src="@{/js/lib/bootstrap.min.js}" type="text/javascript" ></script>
+
+    <!-- bootstrap -->
+
+    <script src="js/lib/circle-progress/circle-progress.min.js" th:src="@{/js/lib/circle-progress/circle-progress.min.js}" type="text/javascript" ></script>
+    <script src="js/lib/circle-progress/circle-progress-init.js" th:src="@{/js/lib/circle-progress/circle-progress-init.js}" type="text/javascript" ></script>
+
+    <script src="js/lib/morris-chart/raphael-min.js" th:src="@{/js/lib/morris-chart/raphael-min.js}" type="text/javascript" ></script>
+    <script src="js/lib/morris-chart/morris.js" th:src="@{/js/lib/morris-chart/morris.js}" type="text/javascript" ></script>
+    <script src="js/lib/morris-chart/morris-init.js" th:src="@{/js/lib/morris-chart/morris-init.js}" type="text/javascript" ></script>
+
+    <!--  flot-chart js -->
+    <script src="js/lib/flot-chart/jquery.flot.js" th:src="@{/js/lib/flot-chart/jquery.flot.js}" type="text/javascript" ></script>
+    <script src="js/lib/flot-chart/jquery.flot.resize.js" th:src="@{/js/lib/flot-chart/jquery.flot.resize.js}" type="text/javascript" ></script>
+    <script src="js/lib/flot-chart/flot-chart-init.js" th:src="@{/js/lib/flot-chart/flot-chart-init.js}" type="text/javascript" ></script>
+    <!-- // flot-chart js -->
+
+
+    <script src="js/lib/vector-map/jquery.vmap.js" th:src="@{/js/lib/vector-map/jquery.vmap.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/jquery.vmap.min.js" th:src="@{/js/lib/vector-map/jquery.vmap.min.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/jquery.vmap.sampledata.js" th:src="@{/js/lib/vector-map/jquery.vmap.sampledata.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/country/jquery.vmap.world.js" th:src="@{/js/lib/vector-map/country/jquery.vmap.world.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/country/jquery.vmap.algeria.js" th:src="@{/js/lib/vector-map/country/jquery.vmap.algeria.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/country/jquery.vmap.argentina.js" th:src="@{/js/lib/vector-map/country/jquery.vmap.argentina.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/country/jquery.vmap.brazil.js" th:src="@{/js/lib/vector-map/country/jquery.vmap.brazil.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/country/jquery.vmap.france.js" th:src="@{/js/lib/vector-map/country/jquery.vmap.france.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/country/jquery.vmap.germany.js" th:src="@{/js/lib/vector-map/country/jquery.vmap.germany.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/country/jquery.vmap.greece.js" th:src="@{/js/lib/vector-map/country/jquery.vmap.greece.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/country/jquery.vmap.iran.js" th:src="@{/js/lib/vector-map/country/jquery.vmap.iran.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/country/jquery.vmap.iraq.js" th:src="@{/js/lib/vector-map/country/jquery.vmap.iraq.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/country/jquery.vmap.russia.js" th:src="@{/js/lib/vector-map/country/jquery.vmap.russia.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/country/jquery.vmap.tunisia.js" th:src="@{/js/lib/vector-map/country/jquery.vmap.tunisia.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/country/jquery.vmap.europe.js" th:src="@{/js/lib/vector-map/country/jquery.vmap.europe.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/country/jquery.vmap.usa.js" th:src="@{/js/lib/vector-map/country/jquery.vmap.usa.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+    <script src="js/lib/vector-map/vector.init.js" th:src="@{/js/lib/vector-map/vector.init.js}" type="text/javascript" ></script>
+
+    <script src="js/lib/weather/jquery.simpleWeather.min.js" th:src="@{/js/lib/weather/jquery.simpleWeather.min.js}" type="text/javascript" ></script>
+    <script src="js/lib/weather/weather-init.js" th:src="@{/js/lib/weather/weather-init.js}" type="text/javascript" ></script>
+    <script src="js/lib/owl-carousel/owl.carousel.min.js" th:src="@{/js/lib/owl-carousel/owl.carousel.min.js}" type="text/javascript" ></script>
+    <script src="js/lib/owl-carousel/owl.carousel-init.js" th:src="@{/js/lib/owl-carousel/owl.carousel-init.js}" type="text/javascript" ></script>
+    <script src="js/scripts.js" th:src="@{/js/scripts.js}" type="text/javascript" ></script>
+    <!-- scripit init-->
+</div>
+</body>
+</html>

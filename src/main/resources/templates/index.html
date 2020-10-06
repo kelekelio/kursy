@@ -6,755 +6,836 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-    <title>
-        Black Dashboard by Creative Tim
-    </title>
-    <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" >
-    <!-- Nucleo Icons -->
-    <link href="css/nucleo-icons.css" rel="stylesheet" th:href="@{/css/nucleo-icons.css}" />
-    <!-- CSS Files -->
-    <link href="css/black-dashboard.css?v=1.0.0" rel="stylesheet" th:href="@{/css/black-dashboard.css?v=1.0.0}" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="demo/demo.css" rel="stylesheet" th:href="@{/demo/demo.css}" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Grzegorz Nowakowski - Kurs Project</title>
+
+    <!-- ================= Favicon ================== -->
+    <!-- Standard -->
+    <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff" th:href="@{http://placehold.it/64.png/000/fff}" >
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff" th:href="@{http://placehold.it/144.png/000/fff}" >
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff" th:href="@{http://placehold.it/114.png/000/fff}" >
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff" th:href="@{http://placehold.it/72.png/000/fff}" >
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff" th:href="@{http://placehold.it/57.png/000/fff}" >
+
+    <!-- Styles -->
+    <link href="css/lib/weather-icons.css" rel="stylesheet" th:href="@{/css/lib/weather-icons.css}" />
+    <link href="css/lib/owl.carousel.min.css" rel="stylesheet" th:href="@{/css/lib/owl.carousel.min.css}" />
+    <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" th:href="@{/css/lib/owl.theme.default.min.css}" />
+    <link href="css/lib/font-awesome.min.css" rel="stylesheet" th:href="@{/css/lib/font-awesome.min.css}" />
+    <link href="css/lib/themify-icons.css" rel="stylesheet" th:href="@{/css/lib/themify-icons.css}" />
+    <link href="css/lib/menubar/sidebar.css" rel="stylesheet" th:href="@{/css/lib/menubar/sidebar.css}" />
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet" th:href="@{/css/lib/bootstrap.min.css}" />
+
+    <link href="css/lib/helper.css" rel="stylesheet" th:href="@{/css/lib/helper.css}" >
+    <link href="css/style.css" rel="stylesheet" th:href="@{/css/style.css}" >
 </head>
 
-<body class="">
-<div class="wrapper">
-    <div class="sidebar">
-        <!--
-          Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
-      -->
-        <div class="sidebar-wrapper">
-            <div class="logo">
-                <a href="javascript:void(0)" class="simple-text logo-mini">
-                    CT
-                </a>
-                <a href="javascript:void(0)" class="simple-text logo-normal">
-                    Creative Tim
-                </a>
-            </div>
-            <ul class="nav">
-                <li class="active ">
-                    <a href="./dashboard.html">
-                        <i class="tim-icons icon-chart-pie-36"></i>
-                        <p>Dashboard</p>
-                    </a>
+<body>
+
+<div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+    <div class="nano">
+        <div class="nano-content">
+            <div class="logo"><a href="index.html"><!-- <img src="images/logo.png" alt="" /> --><span>Focus</span></a></div>
+            <ul>
+                <li class="label">Main</li>
+                <li class="active"><a class="sidebar-sub-toggle"><i class="ti-home"></i> Dashboard <span class="badge badge-primary">2</span> <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    <ul>
+                        <li><a href="index.html">Dashboard 1</a></li>
+                        <li><a href="index1.html">Dashboard 2</a></li>
+
+
+
+                    </ul>
                 </li>
-                <li>
-                    <a href="./icons.html">
-                        <i class="tim-icons icon-atom"></i>
-                        <p>Icons</p>
-                    </a>
+
+                <li class="label">Apps</li>
+                <li><a class="sidebar-sub-toggle"><i class="ti-bar-chart-alt"></i>  Charts  <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    <ul>
+                        <li><a href="chart-flot.html">Flot</a></li>
+                        <li><a href="chart-morris.html">Morris</a></li>
+                        <li><a href="chartjs.html">Chartjs</a></li>
+                        <li><a href="chartist.html">Chartist</a></li>
+                        <li><a href="chart-peity.html">Peity</a></li>
+                        <li><a href="chart-sparkline.html">Sparkle</a></li>
+                        <li><a href="chart-knob.html">Knob</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./map.html">
-                        <i class="tim-icons icon-pin"></i>
-                        <p>Maps</p>
-                    </a>
+                <li><a href="app-event-calender.html"><i class="ti-calendar"></i> Calender </a></li>
+                <li><a href="app-email.html"><i class="ti-email"></i> Email</a></li>
+                <li><a href="app-profile.html"><i class="ti-user"></i> Profile</a></li>
+                <li><a href="app-widget-card.html"><i class="ti-layout-grid2-alt"></i> Widget</a></li>
+                <li class="label">Features</li>
+                <li><a class="sidebar-sub-toggle"><i class="ti-layout"></i> UI Elements <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    <ul>
+                        <li><a href="ui-typography.html">Typography</a></li>
+                        <li><a href="ui-alerts.html">Alerts</a></li>
+
+                        <li><a href="ui-button.html">Button</a></li>
+                        <li><a href="ui-dropdown.html">Dropdown</a></li>
+
+                        <li><a href="ui-list-group.html">List Group</a></li>
+
+                        <li><a href="ui-progressbar.html">Progressbar</a></li>
+                        <li><a href="ui-tab.html">Tab</a></li>
+
+                    </ul>
                 </li>
-                <li>
-                    <a href="./notifications.html">
-                        <i class="tim-icons icon-bell-55"></i>
-                        <p>Notifications</p>
-                    </a>
+                <li><a class="sidebar-sub-toggle"><i class="ti-panel"></i> Components <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    <ul>
+                        <li><a href="uc-calendar.html">Calendar</a></li>
+                        <li><a href="uc-carousel.html">Carousel</a></li>
+                        <li><a href="uc-weather.html">Weather</a></li>
+                        <li><a href="uc-datamap.html">Datamap</a></li>
+                        <li><a href="uc-todo-list.html">To do</a></li>
+                        <li><a href="uc-scrollable.html">Scrollable</a></li>
+                        <li><a href="uc-sweetalert.html">Sweet Alert</a></li>
+                        <li><a href="uc-toastr.html">Toastr</a></li>
+                        <li><a href="uc-range-slider-basic.html">Basic Range Slider</a></li>
+                        <li><a href="uc-range-slider-advance.html">Advance Range Slider</a></li>
+                        <li><a href="uc-nestable.html">Nestable</a></li>
+
+                        <li><a href="uc-rating-bar-rating.html">Bar Rating</a></li>
+                        <li><a href="uc-rating-jRate.html">jRate</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./user.html">
-                        <i class="tim-icons icon-single-02"></i>
-                        <p>User Profile</p>
-                    </a>
+                <li><a class="sidebar-sub-toggle"><i class="ti-layout-grid4-alt"></i> Table <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    <ul>
+                        <li><a href="table-basic.html">Basic</a></li>
+
+                        <li><a href="table-export.html">Datatable Export</a></li>
+                        <li><a href="table-row-select.html">Datatable Row Select</a></li>
+                        <li><a href="table-jsgrid.html">Editable </a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./tables.html">
-                        <i class="tim-icons icon-puzzle-10"></i>
-                        <p>Table List</p>
-                    </a>
+                <li><a class="sidebar-sub-toggle"><i class="ti-heart"></i> Icons <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    <ul>
+                        <li><a href="font-themify.html">Themify</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./typography.html">
-                        <i class="tim-icons icon-align-center"></i>
-                        <p>Typography</p>
-                    </a>
+                <li><a class="sidebar-sub-toggle"><i class="ti-map"></i> Maps <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    <ul>
+                        <li><a href="gmaps.html">Basic</a></li>
+                        <li><a href="vector-map.html">Vector Map</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./rtl.html">
-                        <i class="tim-icons icon-world"></i>
-                        <p>RTL Support</p>
-                    </a>
+                <li class="label">Form</li>
+                <li><a href="form-basic.html"><i class="ti-view-list-alt"></i> Basic Form </a></li>
+                <li class="label">Extra</li>
+                <li><a class="sidebar-sub-toggle"><i class="ti-files"></i> Invoice <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    <ul>
+                        <li><a href="invoice.html">Basic</a></li>
+                        <li><a href="invoice-editable.html">Editable</a></li>
+                    </ul>
                 </li>
-                <li class="active-pro">
-                    <a href="./upgrade.html">
-                        <i class="tim-icons icon-spaceship"></i>
-                        <p>Upgrade to PRO</p>
-                    </a>
+                <li><a class="sidebar-sub-toggle"><i class="ti-target"></i> Pages <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    <ul>
+                        <li><a href="page-login.html">Login</a></li>
+                        <li><a href="page-register.html">Register</a></li>
+                        <li><a href="page-reset-password.html">Forgot password</a></li>
+                    </ul>
                 </li>
+                <li><a href="../documentation/index.html"><i class="ti-file"></i> Documentation</a></li>
+                <li><a><i class="ti-close"></i> Logout</a></li>
             </ul>
         </div>
     </div>
-    <div class="main-panel">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
-            <div class="container-fluid">
-                <div class="navbar-wrapper">
-                    <div class="navbar-toggle d-inline">
-                        <button type="button" class="navbar-toggler">
-                            <span class="navbar-toggler-bar bar1"></span>
-                            <span class="navbar-toggler-bar bar2"></span>
-                            <span class="navbar-toggler-bar bar3"></span>
-                        </button>
+</div>
+<!-- /# sidebar -->
+
+
+<div class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="float-left">
+                    <div class="hamburger sidebar-toggle">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
                     </div>
-                    <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-bar navbar-kebab"></span>
-                    <span class="navbar-toggler-bar navbar-kebab"></span>
-                    <span class="navbar-toggler-bar navbar-kebab"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="search-bar input-group">
-                            <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split" ></i>
-                                <span class="d-lg-none d-md-block">Search</span>
-                            </button>
-                        </li>
-                        <li class="dropdown nav-item">
-                            <a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                <div class="notification d-none d-lg-block d-xl-block"></div>
-                                <i class="tim-icons icon-sound-wave"></i>
-                                <p class="d-lg-none">
-                                    Notifications
-                                </p>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
-                                <li class="nav-link"><a href="#" class="nav-item dropdown-item">Mike John responded to your email</a></li>
-                                <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">You have 5 more tasks</a></li>
-                                <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Your friend Michael is in town</a></li>
-                                <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Another notification</a></li>
-                                <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Another one</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                <div class="photo">
-                                    <img src="../assets/img/anime3.png" alt="Profile Photo">
+                <div class="float-right">
+                    <ul>
+
+                        <li class="header-icon dib"><i class="ti-bell"></i>
+                            <div class="drop-down">
+                                <div class="dropdown-content-heading">
+                                    <span class="text-left">Recent Notifications</span>
                                 </div>
-                                <b class="caret d-none d-lg-block d-xl-block"></b>
-                                <p class="d-lg-none">
-                                    Log out
-                                </p>
-                            </a>
-                            <ul class="dropdown-menu dropdown-navbar">
-                                <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Profile</a></li>
-                                <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Settings</a></li>
-                                <li class="dropdown-divider"></li>
-                                <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Log out</a></li>
-                            </ul>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="images/avatar/3.jpg" alt="" />
+                                                <div class="notification-content">
+                                                    <small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Mr. John</div>
+                                                    <div class="notification-text">5 members joined today </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="images/avatar/3.jpg" alt="" />
+                                                <div class="notification-content">
+                                                    <small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Mariam</div>
+                                                    <div class="notification-text">likes a photo of you</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="images/avatar/3.jpg" alt="" />
+                                                <div class="notification-content">
+                                                    <small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Tasnim</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="images/avatar/3.jpg" alt="" />
+                                                <div class="notification-content">
+                                                    <small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Mr. John</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="text-center">
+                                            <a href="#" class="more-link">See All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
-                        <li class="separator d-lg-none"></li>
+                        <li class="header-icon dib"><i class="ti-email"></i>
+                            <div class="drop-down">
+                                <div class="dropdown-content-heading">
+                                    <span class="text-left">2 New Messages</span>
+                                    <a href="email.html"><i class="ti-pencil-alt pull-right"></i></a>
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li class="notification-unread">
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="images/avatar/1.jpg" alt="" />
+                                                <div class="notification-content">
+                                                    <small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Michael Qin</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-unread">
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="images/avatar/2.jpg" alt="" />
+                                                <div class="notification-content">
+                                                    <small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Mr. John</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="images/avatar/3.jpg" alt="" />
+                                                <div class="notification-content">
+                                                    <small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Michael Qin</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="images/avatar/2.jpg" alt="" />
+                                                <div class="notification-content">
+                                                    <small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Mr. John</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="text-center">
+                                            <a href="#" class="more-link">See All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-icon dib"><span class="user-avatar">John <i class="ti-angle-down f-s-10"></i></span>
+                            <div class="drop-down dropdown-profile">
+                                <div class="dropdown-content-heading">
+                                    <span class="text-left">Upgrade Now</span>
+                                    <p class="trial-day">30 Days Trail</p>
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li><a href="#"><i class="ti-user"></i> <span>Profile</span></a></li>
+
+                                        <li><a href="#"><i class="ti-email"></i> <span>Inbox</span></a></li>
+                                        <li><a href="#"><i class="ti-settings"></i> <span>Setting</span></a></li>
+
+                                        <li><a href="#"><i class="ti-lock"></i> <span>Lock Screen</span></a></li>
+                                        <li><a href="#"><i class="ti-power-off"></i> <span>Logout</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </nav>
-        <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="tim-icons icon-simple-remove"></i>
-                        </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="content-wrap">
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 p-r-0 title-margin-right">
+                    <div class="page-header">
+                        <div class="page-title">
+                            <h1>Hello, <span>Welcome Here</span></h1>
+                        </div>
                     </div>
                 </div>
+                <!-- /# column -->
+                <div class="col-lg-4 p-l-0 title-margin-left">
+                    <div class="page-header">
+                        <div class="page-title">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Home</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!-- /# column -->
             </div>
-        </div>
-        <!-- End Navbar -->
-        <div class="content">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card card-chart">
-                        <div class="card-header ">
-                            <div class="row">
-                                <div class="col-sm-6 text-left">
-                                    <h5 class="card-category">Total Shipments</h5>
-                                    <h2 class="card-title">Performance</h2>
+            <!-- /# row -->
+            <section id="main-content">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="stat-widget-two">
+                                <div class="stat-content">
+                                    <div class="stat-text">Today Expenses </div>
+                                    <div class="stat-digit"> <i class="fa fa-usd"></i>8500</div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                                        <label class="btn btn-sm btn-primary btn-simple active" id="0">
-                                            <input type="radio" name="options" checked>
-                                            <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Accounts</span>
-                                            <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-single-02"></i>
-                        </span>
-                                        </label>
-                                        <label class="btn btn-sm btn-primary btn-simple" id="1">
-                                            <input type="radio" class="d-none d-sm-none" name="options">
-                                            <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Purchases</span>
-                                            <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-gift-2"></i>
-                        </span>
-                                        </label>
-                                        <label class="btn btn-sm btn-primary btn-simple" id="2">
-                                            <input type="radio" class="d-none" name="options">
-                                            <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Sessions</span>
-                                            <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-tap-02"></i>
-                        </span>
-                                        </label>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success w-85" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="stat-widget-two">
+                                <div class="stat-content">
+                                    <div class="stat-text">Income Detail</div>
+                                    <div class="stat-digit"> <i class="fa fa-usd"></i>7800</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary w-75" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="stat-widget-two">
+                                <div class="stat-content">
+                                    <div class="stat-text">Task Completed</div>
+                                    <div class="stat-digit"> <i class="fa fa-usd"></i> 500</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="stat-widget-two">
+                                <div class="stat-content">
+                                    <div class="stat-text">Task Completed</div>
+                                    <div class="stat-digit"> <i class="fa fa-usd"></i>650</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger w-65" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /# card -->
+                    </div>
+                    <!-- /# column -->
+                </div>
+                <!-- /# row -->
+
+
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Sales Overview</h4>
+                                <div id="morris-bar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- column -->
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="m-t-10">
+                                <p>Customer Feedback</p>
+                                <h5>385749</h5>
+                            </div>
+                            <div class="widget-card-circle pr m-t-20 m-b-20" id="info-circle-card">
+                                <i class="ti-control-shuffle pa"></i>
+                            </div>
+                            <ul class="widget-line-list m-b-15">
+                                <li class="border-right">92% <br><span class="color-success"><i class="ti-hand-point-up"></i> Positive</span></li>
+                                <li>8% <br><span class="color-danger"><i class="ti-hand-point-down"></i>Negative</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-title">
+                                <h4>Project</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="current-progress">
+                                    <div class="progress-content">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="progress-text">Website</div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="current-progressbar">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-primary w-40" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                            40%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-content">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="progress-text">Android</div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="current-progressbar">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-primary w-60" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                            60%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-content">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="progress-text">Ios</div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="current-progressbar">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-primary w-70" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                            70%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-content">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="progress-text">Mobile</div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="current-progressbar">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-primary w-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                            90%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <div class="chart-area">
-                                <canvas id="chartBig1"></canvas>
+                    </div>
+                    <!-- /# column -->
+                    <div class="col-lg-4">
+                        <div class="card bg-primary">
+                            <div class="weather-widget">
+                                <div id="weather-one" class="weather-one p-22"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card card-chart">
-                        <div class="card-header">
-                            <h5 class="card-category">Total Shipments</h5>
-                            <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i> 763,215</h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-area">
-                                <canvas id="chartLinePurple"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card card-chart">
-                        <div class="card-header">
-                            <h5 class="card-category">Daily Sales</h5>
-                            <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i> 3,500€</h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-area">
-                                <canvas id="CountryChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card card-chart">
-                        <div class="card-header">
-                            <h5 class="card-category">Completed Tasks</h5>
-                            <h3 class="card-title"><i class="tim-icons icon-send text-success"></i> 12,100K</h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-area">
-                                <canvas id="chartLineGreen"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <div class="card card-tasks">
-                        <div class="card-header ">
-                            <h6 class="title d-inline">Tasks(5)</h6>
-                            <p class="card-category d-inline">today</p>
-                            <div class="dropdown">
-                                <button type="button" class="btn btn-link dropdown-toggle btn-icon" data-toggle="dropdown">
-                                    <i class="tim-icons icon-settings-gear-63"></i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#pablo">Action</a>
-                                    <a class="dropdown-item" href="#pablo">Another action</a>
-                                    <a class="dropdown-item" href="#pablo">Something else</a>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="testimonial-widget-one p-17">
+                                <div class="testimonial-widget-one owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text">
+                                                <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation. consectetur adipisicing elit.
+                                                <i class="fa fa-quote-right"></i>
+                                            </div>
+                                            <img class="testimonial-author-img" src="images/avatar/1.jpg" alt="" />
+                                            <div class="testimonial-author">TYRION LANNISTER</div>
+                                            <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text">
+                                                <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation. consectetur adipisicing elit.
+                                                <i class="fa fa-quote-right"></i>
+                                            </div>
+                                            <img class="testimonial-author-img" src="images/avatar/1.jpg" alt="" />
+                                            <div class="testimonial-author">TYRION LANNISTER</div>
+                                            <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text">
+                                                <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation. consectetur adipisicing elit.
+                                                <i class="fa fa-quote-right"></i>
+                                            </div>
+                                            <img class="testimonial-author-img" src="images/avatar/1.jpg" alt="" />
+                                            <div class="testimonial-author">TYRION LANNISTER</div>
+                                            <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text">
+                                                <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation. consectetur adipisicing elit.
+                                                <i class="fa fa-quote-right"></i>
+                                            </div>
+                                            <img class="testimonial-author-img" src="images/avatar/1.jpg" alt="" />
+                                            <div class="testimonial-author">TYRION LANNISTER</div>
+                                            <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text">
+                                                <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation. consectetur adipisicing elit.
+                                                <i class="fa fa-quote-right"></i>
+                                            </div>
+                                            <img class="testimonial-author-img" src="images/avatar/1.jpg" alt="" />
+                                            <div class="testimonial-author">TYRION LANNISTER</div>
+                                            <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text">
+                                                <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation. consectetur adipisicing elit.
+                                                <i class="fa fa-quote-right"></i>
+                                            </div>
+                                            <img class="testimonial-author-img" src="images/avatar/1.jpg" alt="" />
+                                            <div class="testimonial-author">TYRION LANNISTER</div>
+                                            <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body ">
-                            <div class="table-full-width table-responsive">
-                                <table class="table">
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <span class="form-check-sign">
-                                <span class="check"></span>
-                              </span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="title">Update the Documentation</p>
-                                            <p class="text-muted">Dwuamish Head, Seattle, WA 8:47 AM</p>
-                                        </td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
-                                                <i class="tim-icons icon-pencil"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="checkbox" value="" checked="">
-                                                    <span class="form-check-sign">
-                                <span class="check"></span>
-                              </span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="title">GDPR Compliance</p>
-                                            <p class="text-muted">The GDPR is a regulation that requires businesses to protect the personal data and privacy of Europe citizens for transactions that occur within EU member states.</p>
-                                        </td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
-                                                <i class="tim-icons icon-pencil"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <span class="form-check-sign">
-                                <span class="check"></span>
-                              </span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="title">Solve the issues</p>
-                                            <p class="text-muted">Fifty percent of all respondents said they would be more likely to shop at a company </p>
-                                        </td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
-                                                <i class="tim-icons icon-pencil"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <span class="form-check-sign">
-                                <span class="check"></span>
-                              </span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="title">Release v2.0.0</p>
-                                            <p class="text-muted">Ra Ave SW, Seattle, WA 98116, SUA 11:19 AM</p>
-                                        </td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
-                                                <i class="tim-icons icon-pencil"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <span class="form-check-sign">
-                                <span class="check"></span>
-                              </span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="title">Export the processed files</p>
-                                            <p class="text-muted">The report also shows that consumers will not easily forgive a company once a breach exposing their personal data occurs. </p>
-                                        </td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
-                                                <i class="tim-icons icon-pencil"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <span class="form-check-sign">
-                                <span class="check"></span>
-                              </span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="title">Arival at export process</p>
-                                            <p class="text-muted">Capitol Hill, Seattle, WA 12:34 AM</p>
-                                        </td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
-                                                <i class="tim-icons icon-pencil"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card nestable-cart">
+                            <div class="card-title">
+                                <h4>USA</h4>
+                                <div class="card-title-right-icon">
+                                    <ul>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="Vector-map-js">
+                                <div id="vmap13" class="vmap"></div>
+                            </div>
+                        </div>
+                        <!-- /# card -->
+                    </div>
+                    <!-- /# column -->
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-title">
+                                <h4>New Orders </h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Product</th>
+                                            <th>quantity</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="round-img">
+                                                    <a href=""><img class="w-35" src="images/avatar/1.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>Lew Shawon</td>
+                                            <td><span>Dell-985</span></td>
+                                            <td><span>456 pcs</span></td>
+                                            <td><span class="badge badge-success">Done</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="round-img">
+                                                    <a href=""><img class="w-35" src="images/avatar/1.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>Lew Shawon</td>
+                                            <td><span>Asus-565</span></td>
+                                            <td><span>456 pcs</span></td>
+                                            <td><span class="badge badge-warning">Pending</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="round-img">
+                                                    <a href=""><img class="w-35" src="images/avatar/1.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>lew Shawon</td>
+                                            <td><span>Dell-985</span></td>
+                                            <td><span>456 pcs</span></td>
+                                            <td><span class="badge badge-success">Done</span></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="round-img">
+                                                    <a href=""><img class="w-35" src="images/avatar/1.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>Lew Shawon</td>
+                                            <td><span>Asus-565</span></td>
+                                            <td><span>456 pcs</span></td>
+                                            <td><span class="badge badge-warning">Pending</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="round-img">
+                                                    <a href=""><img class="w-35" src="images/avatar/1.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>lew Shawon</td>
+                                            <td><span>Dell-985</span></td>
+                                            <td><span>456 pcs</span></td>
+                                            <td><span class="badge badge-success">Done</span></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="round-img">
+                                                    <a href=""><img class="w-35" src="images/avatar/1.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>Lew Shawon</td>
+                                            <td><span>Asus-565</span></td>
+                                            <td><span>456 pcs</span></td>
+                                            <td><span class="badge badge-warning">Pending</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="card ">
-                        <div class="card-header">
-                            <h4 class="card-title"> Simple Table</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table tablesorter " id="">
-                                    <thead class=" text-primary">
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Country
-                                        </th>
-                                        <th>
-                                            City
-                                        </th>
-                                        <th class="text-center">
-                                            Salary
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            Dakota Rice
-                                        </td>
-                                        <td>
-                                            Niger
-                                        </td>
-                                        <td>
-                                            Oud-Turnhout
-                                        </td>
-                                        <td class="text-center">
-                                            $36,738
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Minerva Hooper
-                                        </td>
-                                        <td>
-                                            Curaçao
-                                        </td>
-                                        <td>
-                                            Sinaai-Waas
-                                        </td>
-                                        <td class="text-center">
-                                            $23,789
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Sage Rodriguez
-                                        </td>
-                                        <td>
-                                            Netherlands
-                                        </td>
-                                        <td>
-                                            Baileux
-                                        </td>
-                                        <td class="text-center">
-                                            $56,142
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Philip Chaney
-                                        </td>
-                                        <td>
-                                            Korea, South
-                                        </td>
-                                        <td>
-                                            Overland Park
-                                        </td>
-                                        <td class="text-center">
-                                            $38,735
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Doris Greene
-                                        </td>
-                                        <td>
-                                            Malawi
-                                        </td>
-                                        <td>
-                                            Feldkirchen in Kärnten
-                                        </td>
-                                        <td class="text-center">
-                                            $63,542
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Mason Porter
-                                        </td>
-                                        <td>
-                                            Chile
-                                        </td>
-                                        <td>
-                                            Gloucester
-                                        </td>
-                                        <td class="text-center">
-                                            $78,615
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Jon Porter
-                                        </td>
-                                        <td>
-                                            Portugal
-                                        </td>
-                                        <td>
-                                            Gloucester
-                                        </td>
-                                        <td class="text-center">
-                                            $98,615
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+
+
+
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-title">
+                                <h4>Task</h4>
+                            </div>
+                            <div class="todo-list">
+                                <div class="tdl-holder">
+                                    <div class="tdl-content">
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox"><i></i><span>Post three to six times on Twitter.</span>
+                                                    <a href='#' class="ti-close"></a>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" checked><i></i><span>Post one to two times on Facebook.</span>
+                                                    <a href='#' class="ti-close"></a>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" checked><i></i><span>Follow back those who follow you</span>
+                                                    <a href='#' class="ti-close"></a>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" checked><i></i><span>Connect with one new person</span>
+                                                    <a href='#' class="ti-close"></a>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" class="tdl-new form-control" placeholder="Write new item and hit 'Enter'...">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4">
+                        <div class="card alert">
+                            <div class="card-title">
+                                <h4>Web Server</h4>
+                            </div>
+                            <div class="cpu-load-chart">
+                                <div id="cpu-load" class="cpu-load"></div>
+                            </div>
+                        </div>
+                        <!-- /# card -->
+                    </div>
+                    <!-- /# column -->
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-title">
+                                <h4>Ticket </h4>
+
+                            </div>
+                            <div class="recent-comment">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#"><img class="media-object" src="images/avatar/1.jpg" alt="..."></a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">john doe</h4>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. </p>
+                                        <div class="comment-action">
+                                            <div class="badge badge-success">Done</div>
+                                            <span class="m-l-10">
+													<a href="#"><i class="ti-check color-success"></i></a>
+													<a href="#"><i class="ti-close color-danger"></i></a>
+													<a href="#"><i class="fa fa-reply color-primary"></i></a>
+												</span>
+                                        </div>
+                                        <p class="comment-date">October 21, 2017</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#"><img class="media-object" src="images/avatar/2.jpg" alt="..."></a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Mr. John</h4>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. </p>
+                                        <div class="comment-action">
+                                            <div class="badge badge-warning">Pending</div>
+                                            <span class="m-l-10">
+													<a href="#"><i class="ti-check color-success"></i></a>
+													<a href="#"><i class="ti-close color-danger"></i></a>
+													<a href="#"><i class="fa fa-reply color-primary"></i></a>
+												</span>
+                                        </div>
+                                        <p class="comment-date">October 21, 2017</p>
+                                    </div>
+                                </div>
+                                <div class="media no-border">
+                                    <div class="media-left">
+                                        <a href="#"><img class="media-object" src="images/avatar/3.jpg" alt="..."></a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Mr. John</h4>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. </p>
+                                        <div class="comment-action">
+                                            <div class="badge badge-success">Done</div>
+                                            <span class="m-l-10">
+													<a href="#"><i class="ti-check color-success"></i></a>
+													<a href="#"><i class="ti-close color-danger"></i></a>
+													<a href="#"><i class="fa fa-reply color-primary"></i></a>
+												</span>
+                                        </div>
+                                        <div class="comment-date">October 21, 2017</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /# card -->
+                    </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer">
+                            <p>2018 © Admin Board. - <a href="#">example.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <footer class="footer">
-            <div class="container-fluid">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="javascript:void(0)" class="nav-link">
-                            Creative Tim
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="javascript:void(0)" class="nav-link">
-                            About Us
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="javascript:void(0)" class="nav-link">
-                            Blog
-                        </a>
-                    </li>
-                </ul>
-                <div class="copyright">
-                    ©
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>2018 made with <i class="tim-icons icon-heart-2"></i> by
-                    <a href="javascript:void(0)" target="_blank">Creative Tim</a> for a better web.
-                </div>
-            </div>
-        </footer>
     </div>
 </div>
-<div class="fixed-plugin">
-    <div class="dropdown show-dropdown">
-        <a href="#" data-toggle="dropdown">
-            <i class="fa fa-cog fa-2x"> </i>
-        </a>
-        <ul class="dropdown-menu">
-            <li class="header-title"> Sidebar Background</li>
-            <li class="adjustments-line">
-                <a href="javascript:void(0)" class="switch-trigger background-color">
-                    <div class="badge-colors text-center">
-                        <span class="badge filter badge-primary active" data-color="primary"></span>
-                        <span class="badge filter badge-info" data-color="blue"></span>
-                        <span class="badge filter badge-success" data-color="green"></span>
-                    </div>
-                    <div class="clearfix"></div>
-                </a>
-            </li>
-            <li class="adjustments-line text-center color-change">
-                <span class="color-label">LIGHT MODE</span>
-                <span class="badge light-badge mr-2"></span>
-                <span class="badge dark-badge ml-2"></span>
-                <span class="color-label">DARK MODE</span>
-            </li>
-            <li class="button-container">
-                <a href="https://www.creative-tim.com/product/black-dashboard" target="_blank" class="btn btn-primary btn-block btn-round">Download Now</a>
-                <a href="https://demos.creative-tim.com/black-dashboard/docs/1.0/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block btn-round">
-                    Documentation
-                </a>
-            </li>
-            <li class="header-title">Thank you for 95 shares!</li>
-            <li class="button-container text-center">
-                <button id="twitter" class="btn btn-round btn-info"><i class="fab fa-twitter"></i> &middot; 45</button>
-                <button id="facebook" class="btn btn-round btn-info"><i class="fab fa-facebook-f"></i> &middot; 50</button>
-                <br>
-                <br>
-                <a class="github-button" href="https://github.com/creativetimofficial/black-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-            </li>
-        </ul>
-    </div>
+<div id="search">
+    <button type="button" class="close">×</button>
+    <form>
+        <input type="search" value="" placeholder="type keyword(s) here" />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
 </div>
-<!--   Core JS Files   -->
-<script src="js/core/jquery.min.js" th:src="@{/js/core/jquery.min.js}" type="text/javascript" ></script>
-<script src="js/core/popper.min.js" th:src="@{/js/core/popper.min.js}" type="text/javascript" ></script>
-<script src="js/core/bootstrap.min.js" th:src="@{/js/core/bootstrap.min.js}" type="text/javascript" ></script>
-<script src="js/plugins/perfect-scrollbar.jquery.min.js" th:src="@{/js/plugins/perfect-scrollbar.jquery.min.js}" type="text/javascript" ></script>
-<!--  Google Maps Plugin    -->
-<!-- Place this tag in your head or just before your close body tag. -->
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-<!-- Chart JS -->
-<script src="js/plugins/chartjs.min.js" th:src="@{/js/plugins/chartjs.min.js}" type="text/javascript" ></script>
-<!--  Notifications Plugin    -->
-<script src="js/plugins/bootstrap-notify.js" th:src="@{/js/plugins/bootstrap-notify.js}" type="text/javascript" ></script>
-<!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="js/black-dashboard.min.js?v=1.0.0" th:src="@{/js/black-dashboard.min.js?v=1.0.0}" type="text/javascript" ></script><!-- Black Dashboard DEMO methods, don't include it in your project! -->
-<script src="demo/demo.js"                      th:src="@{/demo/demo.js}" type="text/javascript" ></script>
-<script>
-    $(document).ready(function() {
-        $().ready(function() {
-            $sidebar = $('.sidebar');
-            $navbar = $('.navbar');
-            $main_panel = $('.main-panel');
 
-            $full_page = $('.full-page');
+<div th:replace="fragments/js :: js"></div>
 
-            $sidebar_responsive = $('body > .navbar-collapse');
-            sidebar_mini_active = true;
-            white_color = false;
-
-            window_width = $(window).width();
-
-            fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
-
-
-
-            $('.fixed-plugin a').click(function(event) {
-                if ($(this).hasClass('switch-trigger')) {
-                    if (event.stopPropagation) {
-                        event.stopPropagation();
-                    } else if (window.event) {
-                        window.event.cancelBubble = true;
-                    }
-                }
-            });
-
-            $('.fixed-plugin .background-color span').click(function() {
-                $(this).siblings().removeClass('active');
-                $(this).addClass('active');
-
-                var new_color = $(this).data('color');
-
-                if ($sidebar.length != 0) {
-                    $sidebar.attr('data', new_color);
-                }
-
-                if ($main_panel.length != 0) {
-                    $main_panel.attr('data', new_color);
-                }
-
-                if ($full_page.length != 0) {
-                    $full_page.attr('filter-color', new_color);
-                }
-
-                if ($sidebar_responsive.length != 0) {
-                    $sidebar_responsive.attr('data', new_color);
-                }
-            });
-
-            $('.switch-sidebar-mini input').on("switchChange.bootstrapSwitch", function() {
-                var $btn = $(this);
-
-                if (sidebar_mini_active == true) {
-                    $('body').removeClass('sidebar-mini');
-                    sidebar_mini_active = false;
-                    blackDashboard.showSidebarMessage('Sidebar mini deactivated...');
-                } else {
-                    $('body').addClass('sidebar-mini');
-                    sidebar_mini_active = true;
-                    blackDashboard.showSidebarMessage('Sidebar mini activated...');
-                }
-
-                // we simulate the window Resize so the charts will get updated in realtime.
-                var simulateWindowResize = setInterval(function() {
-                    window.dispatchEvent(new Event('resize'));
-                }, 180);
-
-                // we stop the simulation of Window Resize after the animations are completed
-                setTimeout(function() {
-                    clearInterval(simulateWindowResize);
-                }, 1000);
-            });
-
-            $('.switch-change-color input').on("switchChange.bootstrapSwitch", function() {
-                var $btn = $(this);
-
-                if (white_color == true) {
-
-                    $('body').addClass('change-background');
-                    setTimeout(function() {
-                        $('body').removeClass('change-background');
-                        $('body').removeClass('white-content');
-                    }, 900);
-                    white_color = false;
-                } else {
-
-                    $('body').addClass('change-background');
-                    setTimeout(function() {
-                        $('body').removeClass('change-background');
-                        $('body').addClass('white-content');
-                    }, 900);
-
-                    white_color = true;
-                }
-
-
-            });
-
-            $('.light-badge').click(function() {
-                $('body').addClass('white-content');
-            });
-
-            $('.dark-badge').click(function() {
-                $('body').removeClass('white-content');
-            });
-        });
-    });
-</script>
-<script>
-    $(document).ready(function() {
-        // Javascript method's body can be found in assets/js/demos.js
-        demo.initDashboardPageCharts();
-
-    });
-</script>
-<script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-<script>
-    window.TrackJS &&
-    TrackJS.install({
-        token: "ee6fab19c5a04ac1a32a645abde4613a",
-        application: "black-dashboard-free"
-    });
-</script>
 </body>
 
 </html>
